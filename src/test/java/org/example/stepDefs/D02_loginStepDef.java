@@ -14,37 +14,37 @@ public class D02_loginStepDef {
     P02_login loginPage = new P02_login(Hooks.driver);
     SoftAssert softAssert = new SoftAssert();
 
-    @Given("User open login page")
-    public void user_open_login_page() {
+    @Given("Open Login page")
+    public void userOpenLoginPage() {
         homePage.getLoginLink().click();
     }
 
-    @When("User enter email and password")
-    public void user_enter_email_and_password() {
+    @When("Enter email & password")
+    public void userEnterEmailAndPassword() {
         loginPage.getEmailTxtField().sendKeys(Hooks.userEmail);
         loginPage.getPasswordTxtField().sendKeys(Hooks.userValidPassword);
     }
 
-    @And("User click on login button")
-    public void user_click_on_login_button() {
+    @And("Click on Login button")
+    public void userClickOnLoginButton() {
         loginPage.getLoginBtn().click();
     }
 
-    @Then("User login successfully and return to home page")
-    public void user_login_successfully_and_return_to_home_page() {
+    @Then("Login Successfully Back to loginPage")
+    public void userLoginSuccessfullyAndReturnToHomePage() {
         softAssert.assertTrue(homePage.getMyAccountLink().isDisplayed());
         softAssert.assertEquals(Hooks.driver.getCurrentUrl(), "https://demo.nopcommerce.com/");
         softAssert.assertAll();
     }
 
-    @When("User enter invalid email and password")
-    public void user_enter_invalid_email_and_password() {
+    @When("Invalid E-Mail & Passwprd")
+    public void userEnterInvalidEmailAndPassword() {
         loginPage.getEmailTxtField().sendKeys(Hooks.userInvalidEmail);
         loginPage.getPasswordTxtField().sendKeys(Hooks.userValidPassword);
     }
 
-    @Then("User login failed and error message appears")
-    public void userLoginFailedAndErrorMessageAppears() {
+    @Then("user login failed and error message appears")
+    public void loginFailedWithErrorMessage() {
         softAssert.assertTrue(loginPage.getErrorMessage().getText().contains("Login was unsuccessful"));
         softAssert.assertEquals((Color.fromString(loginPage.getErrorMessage().getCssValue("color")).asHex()),
                 "#e4434b");
