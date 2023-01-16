@@ -17,7 +17,7 @@ public class D03_currenciesStepDef {
     Select select;
 
     @Given("User log in with email and password")
-    public void user_log_in_with_email_and_password() {
+    public void userLogInWithEmailAndPassword() {
         homePage.getLoginLink().click();
         loginPage.getEmailTxtField().sendKeys(Hooks.userEmail);
         loginPage.getPasswordTxtField().sendKeys(Hooks.userValidPassword);
@@ -25,13 +25,13 @@ public class D03_currenciesStepDef {
     }
 
     @When("User select euro currency from drop down menu")
-    public void user_select_euro_currency_from_drop_down_menu() {
+    public void userSelectEuroCurrencyFromDropDownMenu() {
         select = new Select(homePage.getCurrencyDropDownMenu());
         select.selectByVisibleText("Euro");
     }
 
     @Then("All items prices change to euro")
-    public void all_items_prices_change_to_euro() {
+    public void allItemsPricesChangeToEuro() {
         List<WebElement> prices = homePage.getPrices();
         for (WebElement price : prices) {
             Assert.assertTrue(price.getText().contains("€"));

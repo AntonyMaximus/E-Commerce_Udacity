@@ -5,9 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.P01_register;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public class D01_registerStepDef {
@@ -16,12 +14,12 @@ public class D01_registerStepDef {
     SoftAssert softAssert = new SoftAssert();
 
     @Given("user go to register page")
-    public void register_page() {
+    public void registerPage() {
         register.registerBtn.click();
     }
 
     @When("user chooses gender")
-    public void userChoosesGender() {
+    public void choosesGender() {
         if (Hooks.gender.equalsIgnoreCase("male")) {
             register.userGenderMale.click();
         }
@@ -31,19 +29,19 @@ public class D01_registerStepDef {
     }
 
     @And("user enters first name")
-    public void userEntersFirstName() {
+    public void enterFirstName() {
         register.userFirstName.clear();
         register.getUserFirstName().sendKeys(Hooks.userFirstName);
     }
 
     @And("user enters last name")
-    public void userEntersLastName() {
+    public void enterLastName() {
         register.userLastName.clear();
         register.getUserLastName().sendKeys(Hooks.userLastName);
     }
 
     @And("user chooses date of birth")
-    public void userChoosesDateOfBirth() {
+    public void chooseDateOfBirth() {
         select = new Select(register.getDayBirthMenu());
         select.selectByValue("29");
         select = new Select(register.getMonthBirthMenu());
@@ -53,39 +51,40 @@ public class D01_registerStepDef {
     }
 
     @And("user enters email address")
-    public void userEntersEmail() {
+    public void enterEmail() {
         register.getUserEmail().sendKeys(Hooks.userEmail);
     }
 
     @And("user enters company name")
-    public void userEntersCompanyName() {
+
+    public void enterCompanyName() {
         register.getCompanyName().sendKeys(Hooks.companyName);
     }
 
     @And("user enters password")
-    public void userEntersPasswordFields() {
+    public void enterPasswordFields() {
         register.getUserPassword().sendKeys(Hooks.userValidPassword);
     }
 
     @And("user enters confirm password")
-    public void userEntersConfirmPassword() {
+    public void confirmPassword() {
         register.getUserConfirmPassword().sendKeys(Hooks.userValidPassword);
     }
 
     @And("user clicks on register button")
-    public void userClicksOnRegisterButton() {
+    public void registerButton() {
         register.getRegisterBtn().click();
     }
 
     @Then("success registration message displayed")
-    public void successRegistrationMessageDisplayed() {
+    public void registrationMessageDisplayed() {
         softAssert.assertTrue(register.getMessage().getText().contains("Your registration completed"));
         softAssert.assertEquals(register.getMessage().getCssValue("color"),
                 "rgba(76, 177, 124, 1)"); // Green
     }
 
     @And("user clicks on continue button to return to home page")
-    public void userClicksOnContinueButton() {
+    public void continueButton() {
         register.getContinueBtn().click();
         softAssert.assertEquals(Hooks.driver.getCurrentUrl(), "https://demo.nopcommerce.com/");
         softAssert.assertAll();

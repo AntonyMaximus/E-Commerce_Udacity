@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="14b8e384-4fc8-4567-8dca-f6f6915509b8" name="Changes" comment="Udacity E-Commerce App Testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F02_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F02_Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D02_loginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D02_loginStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D01_registerStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D01_registerStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D03_currenciesStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D03_currenciesStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D04_searchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D04_searchStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D05_hoverCategoriesStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D05_hoverCategoriesStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D06_homeSlidersStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D06_homeSlidersStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D07_followUsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D07_followUsStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D08_WishlistStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D08_WishlistStepDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="85c4cffb-9dca-4844-ac1a-9e5dc111ecf8" />
+        <option name="url" value="https://github.com/AntonyMaximus/E-Commerce_Udacity.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -171,6 +189,18 @@
       <option name="presentableId" value="Default" />
       <updated>1673400730346</updated>
     </task>
+    <task id="LOCAL-00001" summary="Udacity E-Commerce App Testing">
+      <created>1673836164853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673836164853</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Udacity E-Commerce App Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Udacity E-Commerce App Testing" />
   </component>
 </project>

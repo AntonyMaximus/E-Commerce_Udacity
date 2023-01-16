@@ -19,7 +19,7 @@ public class D05_hoverCategoriesStepDef {
 
 
     @When("User hover to a category and click on one of its sub-categories")
-    public void user_hover_to_a_category_and_click_on_one_of_its_sub_categories() {
+    public void userHoverToACategoryAndClickOnOneOfItsSubCategories() {
         actions.moveToElement(homePage.getComputersLink()).
                 moveToElement(homePage.getNotebooksLink()).build().perform();
         wait.until(ExpectedConditions.visibilityOf(homePage.getNotebooksLink()));
@@ -31,7 +31,7 @@ public class D05_hoverCategoriesStepDef {
     }
 
     @Then("User will navigate to a page contains products about that sub-category")
-    public void user_will_navigate_to_a_page_contains_products_about_that_sub_category() {
+    public void userWillNavigateToAPageContainsProductsAboutThatSubCategory() {
         softAssert.assertTrue(Hooks.driver.getCurrentUrl().contains("notebooks"));
         softAssert.assertTrue(homePage.getNotebooksBreadCrumb().isDisplayed());
         softAssert.assertEquals(homePage.getPageTitleHeader().getText(), "Notebooks");
