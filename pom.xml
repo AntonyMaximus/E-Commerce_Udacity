@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>E-Commerce_Udacity</artifactId>
+  <artifactId>ECommerceProjectUdacity</artifactId>
   <version>1.0-SNAPSHOT</version>
   <dependencies>
 
@@ -13,21 +13,28 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.3.0</version>
+      <version>4.7.2</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
-      <version>7.3.4</version>
+      <version>7.10.1</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-testng</artifactId>
-      <version>7.3.4</version>
+      <version>7.10.1</version>
     </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
 
 
 

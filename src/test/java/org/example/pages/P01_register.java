@@ -1,99 +1,63 @@
 package org.example.pages;
 
-import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 public class P01_register {
-    public P01_register() {
-        PageFactory.initElements(Hooks.driver, this);
+    WebDriver driver;
+
+    public P01_register(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+
     }
 
-    @FindBy(className = "ico-register")
-    public WebElement registerBtn;
-    @FindBy(id = "register-button")
-    public WebElement registerBtnFinal;
-    @FindBy(id = "gender-male")
-    public WebElement userGenderMale;
-    @FindBy(id = "gender-female")
-    public WebElement userGenderFemale;
-    @FindBy(id = "FirstName")
-    public WebElement userFirstName;
-    @FindBy(id = "LastName")
-    public WebElement userLastName;
-    @FindBy(id = "Email")
-    public WebElement userEmail;
-    @FindBy(name = "DateOfBirthDay")
-    public WebElement dayBirthMenu;
-    @FindBy(name = "DateOfBirthMonth")
-    public WebElement monthBirthMenu;
-    @FindBy(name = "DateOfBirthYear")
-    public WebElement yearBirthMenu;
-    @FindBy(id = "Password")
-    public WebElement userPassword;
-    @FindBy(id = "ConfirmPassword")
-    public WebElement userConfirmPassword;
-    @FindBy(id = "Company")
-    public WebElement companyName;
-    @FindBy(css = "div.result")
-    public WebElement message; //registration successfully
-    @FindBy(xpath = "//div[@class='buttons']")
-    public WebElement continueBtn;
-
-    public WebElement getMaleGender() {
-        return userGenderMale;
+    public WebElement genderPOM() {
+        return driver.findElement(By.id("gender-male"));
     }
 
-    public WebElement getDayBirthMenu() {
-        return dayBirthMenu;
+    public WebElement firstNamePOM() {
+        return driver.findElement(By.id("FirstName"));
     }
 
-    public WebElement getMonthBirthMenu() {
-        return monthBirthMenu;
+    public WebElement lastnamePom() {
+        return driver.findElement(By.id("LastName"));
     }
 
-    public WebElement getYearBirthMenu() {
-        return yearBirthMenu;
+    public WebElement dayBirthPOM() {
+        return driver.findElement(By.name("DateOfBirthDay"));
     }
 
-    public WebElement getUserFirstName() {
-        return userFirstName;
+    public WebElement monthBirhtPOM() {
+        return driver.findElement(By.name("DateOfBirthMonth"));
     }
 
-    public WebElement getUserLastName() {
-        return userLastName;
+    public WebElement yearBirthPOM() {
+        return driver.findElement(By.name("DateOfBirthYear"));
     }
 
-    public WebElement getUserEmail() {
-        return userEmail;
+    public WebElement emailPOM() {
+        return driver.findElement(By.id("Email"));
     }
 
-    public WebElement getUserPassword() {
-        return userPassword;
+    public WebElement companyPOM() {
+        return driver.findElement(By.id("Company"));
     }
 
-    public WebElement getUserConfirmPassword() {
-        return userConfirmPassword;
+    public WebElement newsLetterPOM() {
+        return driver.findElement(By.id("Newsletter"));
     }
 
-    public WebElement getCompanyName() {
-        return companyName;
+    public WebElement passwordPOM() {
+        return driver.findElement(By.id("Password"));
     }
 
-    public WebElement getRegisterBtn() {
-        return registerBtnFinal;
-    }
-
-    public WebElement getMessage() {
-        return message;
-    }
-
-    public WebElement getContinueBtn() {
-        return continueBtn;
+    public WebElement confirmPasswordPOM() {
+        return driver.findElement(By.id("ConfirmPassword"));
     }
 }
+
 
 

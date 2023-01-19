@@ -1,23 +1,19 @@
 @smoke
+Feature: user should be able to login to the systems and earch for any product
 
-Feature: Search | users could search
+  Background: user open the browser
 
-  Scenario Outline: user could search for laptop
-    When User enter a product name "<string>" in search text field
-    And User click on search button
-    Then Search result appears with products related to the product name "<string>"
-    Examples:
-      | string |
-      | laptop |
-      | book   |
-      | nike   |
 
-  Scenario Outline: user could search for sku
-    When User enter a product sku "<sku>" in search text field
-    And User click on search button
-    Then Search result appears with products related to the product sku "<sku>"
-    Examples:
-      | sku       |
-      | SCI_FAITH |
-      | APPLE_CAM |
-      | SF_PRO_11 |
+  Scenario: Logged User could search for any product
+
+    When Open Login page
+
+
+    And user enter "tonymaximus@gmail.com" and "Orange"
+    And Click on Login button
+    And Login Successfully Back to loginPage
+
+    Then the user enter "notebook" for any product
+    And user click on search button
+
+    And user could search for any product successfully

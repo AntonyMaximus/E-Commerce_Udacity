@@ -5,14 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14b8e384-4fc8-4567-8dca-f6f6915509b8" name="Changes" comment="Udacity E-Commerce App Testing">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F03_Reset.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F06_Categories.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F07_Filter.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F08_Tags.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F09_Shopping.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F10_Wishlist.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F11_Compare.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F12_Successful.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/MainDriver/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P03_reset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P04_search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P05_currencies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P06_categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P07_filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P08_tags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P09_shopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P10_wishlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P11_compare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P12_successful.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D03_resetStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D05_currenciesStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D06_categoriesStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D07_filterStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D08_tagsStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D09_shoppingStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D10_wishlistStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D11_compareStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D12_successfulStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/CucumberReport.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/CucumberReport2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/CucumberReport2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Cucumber_java_7_3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Cucumber_testng_7_3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Dependencies.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Dependencies.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/selenium_java_4_3_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F01_Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F01_Register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F02_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F02_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F03_Currencies.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F05_Currencies.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F04_Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F04_Search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F05_hoverCategories.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F06_homeSliders.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F07_followUs.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F08_Wishlist.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/P00_homePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/P01_register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P01_register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/P02_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/P02_login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D01_registerStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D01_registerStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D03_currenciesStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D03_currenciesStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D02_loginStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D02_loginStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D03_currenciesStepDef.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D04_searchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D04_searchStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D05_hoverCategoriesStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D05_hoverCategoriesStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D06_homeSlidersStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D06_homeSlidersStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D07_followUsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D07_followUsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D08_WishlistStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D08_WishlistStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D05_hoverCategoriesStepDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D06_homeSlidersStepDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D07_followUsStepDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/D08_WishlistStepDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testRunner/runners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testRunner/runners.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +79,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -63,7 +113,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/OneDrive/Desktop/Automation/FinalAutoProject&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/ECommerceProjectUdacity&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -71,19 +121,22 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.testRunner" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\OneDrive\Desktop\HERo\FWD_Automation\E-Commerce_Udacity\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.runners">
-    <configuration name="All Features in: E-Commerce_Udacity" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: F03_Reset" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F03_Reset.feature" />
       <option name="GLUE" value="org.example.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="E-Commerce_Udacity" />
+      <module name="ECommerceProjectUdacity" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="All Features in: E-Commerce_Udacity" />
+      <option name="SUGGESTED_NAME" value="Feature: F03_Reset" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +148,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: F01_Register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: F04_Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_Register.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F04_Search.feature" />
       <option name="GLUE" value="org.example.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="E-Commerce_Udacity" />
+      <module name="ECommerceProjectUdacity" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: F01_Register" />
+      <option name="SUGGESTED_NAME" value="Feature: F04_Search" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -114,14 +167,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: F02_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: F05_Currencies" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F02_Login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F05_Currencies.feature" />
       <option name="GLUE" value="org.example.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="E-Commerce_Udacity" />
+      <module name="ECommerceProjectUdacity" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: F02_Login" />
+      <option name="SUGGESTED_NAME" value="Feature: F05_Currencies" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -133,28 +186,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: guest user could register with valid data successfully (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_Register.feature" />
-      <option name="GLUE" value="org.example.stepDefs" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="E-Commerce_Udacity" />
-      <option name="NAME_FILTER" value="^guest user could register with valid data successfully$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^guest user could register with valid data successfully$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: guest user could register with valid data successfully" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <configuration name="runners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ECommerceProjectUdacity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="org.example.testRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.example.testRunner" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testRunner.runners" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ECommerce؛ProjectUdacity" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ECommerce؛ProjectUdacity" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="runners" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="E-Commerce_Udacity" />
+      <module name="ECommerceProjectUdacity" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.testRunner.*" />
@@ -173,10 +234,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.runners" />
-        <item itemvalue="Cucumber Java.All Features in: E-Commerce_Udacity" />
-        <item itemvalue="Cucumber Java.Feature: F02_Login" />
-        <item itemvalue="Cucumber Java.Feature: F01_Register" />
-        <item itemvalue="Cucumber Java.Scenario: guest user could register with valid data successfully (1)" />
+        <item itemvalue="JUnit.runners" />
+        <item itemvalue="Cucumber Java.Feature: F05_Currencies" />
+        <item itemvalue="Cucumber Java.Feature: F04_Search" />
+        <item itemvalue="Cucumber Java.Feature: F03_Reset" />
       </list>
     </recent_temporary>
   </component>
@@ -196,10 +257,18 @@
       <option name="project" value="LOCAL" />
       <updated>1673836164853</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Udacity E-Commerce App Testing">
+      <created>1673837448805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673837448805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Udacity E-Commerce App Testing (Second Commit)" />
     <MESSAGE value="Udacity E-Commerce App Testing" />
     <option name="LAST_COMMIT_MESSAGE" value="Udacity E-Commerce App Testing" />
   </component>
